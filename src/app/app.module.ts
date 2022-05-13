@@ -13,6 +13,8 @@ import { AuthComponent } from './auth/auth.component';
 import { RecipseListComponent } from './recipse/recipse-list/recipse-list.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DialogOverviewExampleDialog} from "./shopping-list/DialogOverviewExampleDialog";
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RecipseEditComponent,
     ShoppingListComponent,
     AuthComponent,
+    DialogOverviewExampleDialog,
     RecipseListComponent,
     HeaderComponent
   ],

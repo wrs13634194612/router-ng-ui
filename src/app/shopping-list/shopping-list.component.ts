@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {DialogOverviewExampleDialog} from './DialogOverviewExampleDialog';
 
 @Component({
   selector: 'app-shopping-list',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) {
+
+  }
 
   ngOnInit(): void {
   }
 
+  login(event: Event) {
+    event.preventDefault();
+
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+      width: '250px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`几秒之后关闭弹窗：${result}`)
+    });
+  }
 }
