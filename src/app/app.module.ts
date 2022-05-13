@@ -14,6 +14,7 @@ import { RecipseListComponent } from './recipse/recipse-list/recipse-list.compon
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DialogOverviewExampleDialog} from "./shopping-list/DialogOverviewExampleDialog";
+import { MineComponent } from './mine/mine.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {DialogOverviewExampleDialog} from "./shopping-list/DialogOverviewExample
     AuthComponent,
     DialogOverviewExampleDialog,
     RecipseListComponent,
-    HeaderComponent
+    HeaderComponent,
+    MineComponent
   ],
   imports: [
     BrowserModule,

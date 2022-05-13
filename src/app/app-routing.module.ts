@@ -6,6 +6,7 @@ import {RecipseComponent} from "./recipse/recipse.component";
 import {RecipseDetailComponent} from "./recipse/recipse-detail/recipse-detail.component";
 import {RecipseEditComponent} from "./recipse/recipse-edit/recipse-edit.component";
 import {RecipseStartComponent} from "./recipse/recipse-start/recipse-start.component";
+import {MineComponent} from "./mine/mine.component";
 
 
 const routes: Routes = [
@@ -17,7 +18,7 @@ const routes: Routes = [
       {path: 'edit', component: RecipseEditComponent}
     ]
   },
-  {path: 'shopping-list', component: ShoppingListComponent},
+  {path: 'shopping-list', component: MineComponent},
   {path: 'auth', component: AuthComponent},
 ];
 
