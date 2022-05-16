@@ -1,0 +1,27 @@
+<div style="background-color: #0D58ff;height: 50px;display: flex;justify-content: space-between;width: 100%">
+  <div style="display: table;height: 100%">
+    <mat-icon (click)="aboutBack()" style="font-size: 30px;color: white;vertical-align: middle;display: table-cell;">
+      keyboard_arrow_left
+    </mat-icon>
+  </div>
+  <div style="display: table;height: 100%">
+    <p style="display: table-cell;vertical-align: middle;margin-left: 20%;width: 100px;text-align: right;color: white;font-size: 16px;">
+      系统消息</p>
+  </div>
+  <div style="display: table;height: 100%;">
+    <p style="padding-right: 15px;display: table-cell;vertical-align: middle;color: white;font-size: 14px;">
+      一键清除</p>
+  </div>
+</div>
+
+<mat-card class="mat-elevation-z1"  *ngFor="let item of tableElements"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 130px">
+  <div style="display: flex;justify-content: space-between">
+  <p style="color: black;font-size: 15px">超标警告提示</p>
+    <mat-icon style="font-size: 22px;color: gray;vertical-align: middle;display: table-cell;">
+      delete_forever
+    </mat-icon>
+  </div>
+    <p>2022-05-14 14:32:26</p>
+    <p>您的好友用户：白了又了白向您分享了1个设备,点击确认</p>
+</mat-card>

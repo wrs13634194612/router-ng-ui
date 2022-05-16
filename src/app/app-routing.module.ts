@@ -7,6 +7,12 @@ import {RecipseDetailComponent} from "./recipse/recipse-detail/recipse-detail.co
 import {RecipseEditComponent} from "./recipse/recipse-edit/recipse-edit.component";
 import {RecipseStartComponent} from "./recipse/recipse-start/recipse-start.component";
 import {MineComponent} from "./mine/mine.component";
+import {AboutComponent} from "./about/about.component";
+import {WaiterComponent} from "./waiter/waiter.component";
+import {SetComponent} from "./set/set.component";
+import {UserComponent} from "./user/user.component";
+import {ShareManagerComponent} from "./share-manager/share-manager.component";
+import {MessageComponent} from "./message/message.component";
 
 
 const routes: Routes = [
@@ -19,6 +25,12 @@ const routes: Routes = [
     ]
   },
   {path: 'shopping-list', component: MineComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'waiter', component: WaiterComponent},
+  {path: 'set', component: SetComponent},
+  {path: 'share-manager', component: ShareManagerComponent},
+  {path: 'user', component: UserComponent},
+  {path: 'message', component: MessageComponent},
   {path: 'auth', component: AuthComponent},
 ];
 

@@ -1,0 +1,12 @@
+<mat-card class="mat-elevation-z0">
+  <div style="font-size: 20px;color: black;font-weight: normal;text-align: center">
+    <p>确认删除缓存</p>
+  </div>
+  <div style="text-align: left;margin-top: 20px;color: gray">
+    <p>将删除该软件在本机的数据缓存</p>
+  </div>
+  <mat-card-actions style="display: flex;justify-content: space-between">
+    <button mat-flat-button style="font-size: 16px;color: black;font-weight: bold;" (click)="cacheCancel()">取消</button>
+    <button mat-flat-button style="font-size: 16px;color: #0091ff;font-weight: bold;" (click)="cacheSure()">确定</button>
+  </mat-card-actions>
+</mat-card>

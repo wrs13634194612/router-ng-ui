@@ -1,4 +1,4 @@
-<div style="margin-top: 10px;text-align: right;padding-right: 20px">
+<div style="margin-top: 15px;text-align: right;padding-right: 20px" routerLink="/message">
   <mat-icon matBadge="9" class="mat-badge-small" matBadgeColor="warn">power_settings_new</mat-icon>
 </div>
 <div>
@@ -10,7 +10,7 @@
     <mat-card-title style="padding-bottom: 10px;margin: 0 auto;text-align: center;font-size: 18px">白了又了白
     </mat-card-title>
     <mat-card-subtitle style="margin: 0 auto;text-align: center">minApp13043</mat-card-subtitle>
-    <mat-card-actions style="display: flex;justify-content: space-between">
+    <mat-card-actions style="display: flex;justify-content: space-between;">
       <button style="color: gray" mat-button>设备总数:8</button>
       <button style="color: gray" mat-button>设备开:5</button>
     </mat-card-actions>
@@ -18,7 +18,7 @@
 
   <mat-card class="mat-elevation-z1"
             style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 110px">
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" routerLink="/user">
       <mat-icon style="color: gray;margin-left: 7px">developer_board</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -27,7 +27,7 @@
       <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
     </div>
     <div style="width: 85%; margin-left: 12%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" routerLink="/share-manager">
       <mat-icon style="color: gray;margin-left: 7px">mail_outline</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -41,7 +41,7 @@
 
   <mat-card class="mat-elevation-z1"
             style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 160px">
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between"  (click)="cacheDialog()">
       <mat-icon style="color: gray;margin-left: 7px">archive</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -50,7 +50,7 @@
       <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
     </div>
     <div style="width: 85%; margin-left: 12%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" (click)="openDialog()">
       <mat-icon style="color: gray;margin-left: 7px">drafts</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -59,7 +59,7 @@
       <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
     </div>
     <div style="width: 85%; margin-left: 12%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" routerLink="/set">
       <mat-icon style="color: gray;margin-left: 7px">ballot</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -72,7 +72,7 @@
 
   <mat-card class="mat-elevation-z1"
             style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 110px">
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" routerLink="/waiter">
       <mat-icon style="color: gray;margin-left: 7px">insert_chart_outlined</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -81,7 +81,7 @@
       <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
     </div>
     <div style="width: 85%; margin-left: 12%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
-    <div style="display: flex;justify-content: space-between">
+    <div style="display: flex;justify-content: space-between" routerLink="/about">
       <mat-icon style="color: gray;margin-left: 7px">developer_board</mat-icon>
       <div style="padding-bottom: 10px;color:black;width: 240px;
         height: 35px;display: table">
@@ -89,8 +89,6 @@
       </div>
       <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
     </div>
-
-
   </mat-card>
 
 </div>

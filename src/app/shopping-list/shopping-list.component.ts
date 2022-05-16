@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import {DialogOverviewExampleDialog} from './DialogOverviewExampleDialog';
+import {DialogOverviewExampleDialog} from '../dialog/DialogOverviewExampleDialog';
 
 @Component({
   selector: 'app-shopping-list',

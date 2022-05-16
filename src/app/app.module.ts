@@ -13,8 +13,15 @@ import { AuthComponent } from './auth/auth.component';
 import { RecipseListComponent } from './recipse/recipse-list/recipse-list.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {DialogOverviewExampleDialog} from "./shopping-list/DialogOverviewExampleDialog";
+import {DialogOverviewExampleDialog} from "./dialog/DialogOverviewExampleDialog";
 import { MineComponent } from './mine/mine.component';
+import { AboutComponent } from './about/about.component';
+import { WaiterComponent } from './waiter/waiter.component';
+import { SetComponent } from './set/set.component';
+import {CacheDialog} from "./dialog/CacheDialog";
+import { UserComponent } from './user/user.component';
+import { ShareManagerComponent } from './share-manager/share-manager.component';
+import { MessageComponent } from './message/message.component';
 
 
 @NgModule({
@@ -26,10 +33,17 @@ import { MineComponent } from './mine/mine.component';
     RecipseEditComponent,
     ShoppingListComponent,
     AuthComponent,
+    CacheDialog,
     DialogOverviewExampleDialog,
     RecipseListComponent,
     HeaderComponent,
-    MineComponent
+    MineComponent,
+    AboutComponent,
+    WaiterComponent,
+    SetComponent,
+    UserComponent,
+    ShareManagerComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

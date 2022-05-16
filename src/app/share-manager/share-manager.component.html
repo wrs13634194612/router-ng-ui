@@ -1,0 +1,31 @@
+<div style="background-color: #0D58ff;height: 50px;display: table;width: 100%">
+  <mat-icon (click)="aboutBack()" style="font-size: 30px;color: white;vertical-align: middle;display: table-cell;">
+    keyboard_arrow_left
+  </mat-icon>
+  <p style="color: white;width: 200px;font-size: 16px;padding-left: 28%;vertical-align: middle;display: table-cell">
+    共享管理</p>
+</div>
+
+<div>
+  <p style="font-weight: bold;margin-left: 15px;margin-top: 20px;">我共享的设备</p>
+</div>
+<mat-card class="mat-elevation-z1"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 200px">
+  <div style="text-align: center;margin: 0 auto;">
+    <img style="width: 114px;height: 104px"
+         src="./assets/share_me.png"/>
+  </div>
+  <p style="margin-top: 20px;text-align: center">暂未共享设备</p>
+</mat-card>
+
+<div>
+  <p style="font-weight: bold;margin-left: 15px;margin-top: 20px;">收到的共享设备</p>
+</div>
+<mat-card class="mat-elevation-z1"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 200px">
+  <div style="text-align: center;margin: 0 auto;">
+    <img style="width: 114px;height: 98px"
+         src="./assets/share_other.png"/>
+  </div>
+  <p style="margin-top: 20px;text-align: center">暂未接收到共享设备</p>
+</mat-card>

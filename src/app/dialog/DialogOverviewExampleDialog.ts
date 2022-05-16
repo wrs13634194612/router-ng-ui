@@ -3,7 +3,7 @@ import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'login-dialog',
-  templateUrl: 'login-dialog.html',
+  templateUrl: 'update-dialog.html',
 })
 export class DialogOverviewExampleDialog implements OnInit {
 
@@ -12,6 +12,11 @@ export class DialogOverviewExampleDialog implements OnInit {
   }
 
   onNoClick(): void {
+    console.log(`几秒之后关闭弹2窗`)
+    this.dialogRef.close();
+  }
+
+  btnUpdate(): void {
     console.log(`几秒之后关闭弹2窗`)
     this.dialogRef.close();
   }
