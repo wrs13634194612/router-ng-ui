@@ -13,6 +13,7 @@ import {SetComponent} from "./set/set.component";
 import {UserComponent} from "./user/user.component";
 import {ShareManagerComponent} from "./share-manager/share-manager.component";
 import {MessageComponent} from "./message/message.component";
+import {AddModeComponent} from "./add-mode/add-mode.component";
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'set', component: SetComponent},
   {path: 'share-manager', component: ShareManagerComponent},
   {path: 'user', component: UserComponent},
+  {path: 'add-mode', component: AddModeComponent},
   {path: 'message', component: MessageComponent},
   {path: 'auth', component: AuthComponent},
 ];

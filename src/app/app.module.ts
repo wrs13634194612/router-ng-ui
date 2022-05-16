@@ -22,6 +22,7 @@ import {CacheDialog} from "./dialog/CacheDialog";
 import { UserComponent } from './user/user.component';
 import { ShareManagerComponent } from './share-manager/share-manager.component';
 import { MessageComponent } from './message/message.component';
+import { AddModeComponent } from './add-mode/add-mode.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MessageComponent } from './message/message.component';
     SetComponent,
     UserComponent,
     ShareManagerComponent,
-    MessageComponent
+    MessageComponent,
+    AddModeComponent
   ],
   imports: [
     BrowserModule,

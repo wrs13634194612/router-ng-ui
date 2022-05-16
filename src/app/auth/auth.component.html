@@ -1,3 +1,31 @@
-<div>
-测试
+<div style="background-image: url('../../assets/mode_bg.png');width: 375px;height: 222px">
+  <div style="display: flex;justify-content: space-between;padding-top: 30px;padding-left: 20px;padding-right: 20px">
+    <p style="font-size: 24px;font-weight: bolder;color: #0091ff">{{temString}}&#8451;</p>
+    <div style="display: table;">
+      <p
+        style="width: 240px;display: table-cell;color: #0091ff;vertical-align: middle;border-radius: 20px;height: 15px;text-align: left;font-size: 12px">{{polluteString}}</p>
+    </div>
+    <img style="width: 20px;height: 20px" routerLink="/add-mode"
+         src="assets/mode_add.png"/>
+  </div>
+  <p style="padding-left: 20px;margin-top: 20px">广州/多云</p>
+  <p style="padding-left: 20px;margin-top: 20px">2022.05.16 星期一</p>
+  <p style="padding-left: 20px;color: #0091ff;margin-top: 20px;font-size: 12px">设备总数1，在使用中设备0</p>
 </div>
+
+<mat-card class="mat-elevation-z1" *ngFor="let item of tableElements"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 80px">
+  <div style="display: flex;justify-content: space-between">
+      <img style="width: 40px;height: 40px" src="assets/icon_out_n.png"/>
+    <div style="width: 190px">
+      <p style="color: black;font-size: 15px">gftsc</p>
+      <p style="color: black;font-size: 12px;color: gray">00:02:00-00:15:00</p>
+    </div>
+    <div style="display: table;margin-top: 15px;width: 50px;height: 20px">
+      <p style="display: table-cell;vertical-align: middle;color: white;background: #0091ff;border-radius: 30px;text-align: center">
+        执行
+      </p>
+    </div>
+  </div>
+</mat-card>
+

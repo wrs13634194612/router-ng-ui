@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class AuthComponent implements OnInit {
   isLoginMode = true;
   isLoading = false;
+  temString = '38';
+  polluteString = '优';
+
+  tableElements: string[]= ["Google", "Runoob", "Taobao"];
 
 
   constructor() { }
