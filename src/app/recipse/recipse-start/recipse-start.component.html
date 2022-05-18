@@ -1,6 +1,19 @@
-<mat-card style="width: 160px;height: 180px">
-  <p>零火线(二)</p>
-  <p>关闭|主卧</p>
-
-
-</mat-card>
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile *ngFor="let item of tableElements">
+    <mat-card style="width: 150px;height: 150px;" routerLink="/device-zcz">
+      <div style="display: flex;justify-content: space-between">
+        <p>零火线(二)</p>
+        <div>
+          <p style="border: 4px solid limegreen;border-radius: 4px;position: absolute;"></p>
+        </div>
+      </div>
+      <p>关闭|主卧</p>
+      <div style="display: flex;justify-content: space-between">
+        <img style="width: 38px;height: 38px"
+             src="./assets/swt_one.png"/>
+        <img style="width: 38px;height: 38px"
+             src="./assets/isopen.png"/>
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

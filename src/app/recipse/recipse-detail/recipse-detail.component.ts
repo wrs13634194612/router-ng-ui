@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipse-detail.component.css']
 })
 export class RecipseDetailComponent implements OnInit {
+  tableElements: string[]= ["Google", "Runoob", "Tlink","Taobao"];
 
   constructor() { }
 

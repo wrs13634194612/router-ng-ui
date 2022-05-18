@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipse-start.component.css']
 })
 export class RecipseStartComponent implements OnInit {
+  tableElements: string[]= ["Google", "Runoob", "Taobao"];
 
   constructor() { }
 

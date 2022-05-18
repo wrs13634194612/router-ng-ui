@@ -14,6 +14,9 @@ import {UserComponent} from "./user/user.component";
 import {ShareManagerComponent} from "./share-manager/share-manager.component";
 import {MessageComponent} from "./message/message.component";
 import {AddModeComponent} from "./add-mode/add-mode.component";
+import {AddDeviceComponent} from "./add-device/add-device.component";
+import {SetPasswordComponent} from "./login/set-password/set-password.component";
+import {DeviceZczComponent} from "./device-zcz/device-zcz.component";
 
 
 const routes: Routes = [
@@ -33,6 +36,9 @@ const routes: Routes = [
   {path: 'user', component: UserComponent},
   {path: 'add-mode', component: AddModeComponent},
   {path: 'message', component: MessageComponent},
+  {path: 'set-password', component: SetPasswordComponent},
+  {path: 'add-device', component: AddDeviceComponent},
+  {path: 'device-zcz', component: DeviceZczComponent},
   {path: 'auth', component: AuthComponent},
 ];
 

@@ -1,0 +1,40 @@
+<div style="background-color: #0091ff;height: 50px;display: table;width: 100%">
+  <mat-icon (click)="aboutBack()" style="font-size: 30px;color: white;vertical-align: middle;display: table-cell;">
+    keyboard_arrow_left
+  </mat-icon>
+  <p style="color: white;width: 200px;font-size: 16px;padding-left: 28%;vertical-align: middle;display: table-cell">
+    智能配网</p>
+</div>
+<div style="margin-left: 20px;margin-right: 20px;">
+<p style="text-align: center;font-weight: bolder;font-size: 15px;margin-top: 30px">请确认当前设备已接入电源</p>
+<p style="font-size: 12px;color: #979797;text-align: center;">设备接入电源等红灯熄灭后,长按开关键至红灯闪烁点击下一步,如果当前设备为通断器,请切换到AP配网</p>
+<mat-card>
+  <p style="text-align: center;font-size: 15px;color: black">网络配置</p>
+  <div style="display: flex;justify-content: space-between;">
+    <mat-form-field style="width: 100%;font-size: 10px" appearance="standard">
+      <input matInput placeholder="wifi名称">
+    </mat-form-field>
+    <div style="padding-top: 5%;">
+      <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
+    </div>
+  </div>
+  <div style="display: flex;justify-content: space-between;">
+    <mat-form-field style="width: 98%;font-size: 10px" appearance="standard">
+      <input matInput placeholder="密码" type="password">
+    </mat-form-field>
+  </div>
+</mat-card>
+
+<p style="margin-top: 20px;color: #979797;font-size: 13px;">注意：当前设备暂时无法使用5G Wi-Fi配置</p>
+<p style="color: #979797;font-size: 13px;">1.若您使用的是5G WLAN,请切换其他WLAN</p>
+<a style="color: #979797;font-size: 13px;">2.若自动联网多次失败时,请</a><a style="font-size: 13px;color: #0091ff">切换AP配置</a>
+
+<div style="text-align: center;margin-top: 30px;display: flex;justify-content: space-between;">
+  <button mat-flat-button
+          style="border-radius:30px;background-color: #eaeaea;color: black;height: 35px;width: 120px;font-weight: normal">切换配网
+  </button>
+  <button mat-flat-button
+          style="border-radius:30px;background-color: #0091ff;color: white;height: 35px;width: 120px;font-weight: normal">下一步
+  </button>
+</div>
+</div>

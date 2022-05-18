@@ -1,3 +1,19 @@
-<button (click)="onDefaultRecipe()" mat-flat-button color="primary">全部</button>
-<button (click)="onImgRecipe()" mat-flat-button color="accent">房间</button>
-<button (click)="onNewRecipe()" mat-flat-button color="warn">编辑</button>
+<div style="text-align: right;margin-top: 10px;margin-right: 20px;">
+  <button mat-button [matMenuTriggerFor]="beforeMenu" mat-icon-button>
+    <mat-icon>add</mat-icon>
+  </button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item routerLink="/add-device">添加设备</button>
+    <button mat-menu-item>蓝牙设备</button>
+    <button mat-menu-item>设备分享</button>
+    <button mat-menu-item>扫一扫</button>
+  </mat-menu>
+</div>
+<div style="margin-left: 20px;font-size: 20px;font-weight: inherit">
+  <p>云的家</p>
+</div>
+<div style="display: flex;justify-content: space-around;margin-top: 30px">
+  <button (click)="onDefaultRecipe()" mat-flat-button color="primary">全部</button>
+  <button (click)="onImgRecipe()" mat-flat-button color="accent">房间</button>
+  <button *ngIf="false" (click)="onNewRecipe()" mat-flat-button color="warn">编辑</button>
+</div>

@@ -24,6 +24,9 @@ import { ShareManagerComponent } from './share-manager/share-manager.component';
 import { MessageComponent } from './message/message.component';
 import { AddModeComponent } from './add-mode/add-mode.component';
 import { LoginComponent } from './login/login.component';
+import { AddDeviceComponent } from './add-device/add-device.component';
+import { SetPasswordComponent } from './login/set-password/set-password.component';
+import { DeviceZczComponent } from './device-zcz/device-zcz.component';
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { LoginComponent } from './login/login.component';
     ShareManagerComponent,
     MessageComponent,
     AddModeComponent,
-    LoginComponent
+    LoginComponent,
+    AddDeviceComponent,
+    SetPasswordComponent,
+    DeviceZczComponent
   ],
   imports: [
     BrowserModule,
