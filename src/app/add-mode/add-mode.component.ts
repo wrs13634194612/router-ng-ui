@@ -11,5 +11,7 @@ export class AddModeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  aboutBack():void{
+    history.go(-1);
+  }
 }

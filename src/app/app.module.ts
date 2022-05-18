@@ -23,6 +23,7 @@ import { UserComponent } from './user/user.component';
 import { ShareManagerComponent } from './share-manager/share-manager.component';
 import { MessageComponent } from './message/message.component';
 import { AddModeComponent } from './add-mode/add-mode.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { AddModeComponent } from './add-mode/add-mode.component';
     UserComponent,
     ShareManagerComponent,
     MessageComponent,
-    AddModeComponent
+    AddModeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

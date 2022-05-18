@@ -1,1 +1,93 @@
-<p>add-mode works!</p>
+<div style="background-color: #0091ff;height: 50px;display: table;width: 100%">
+  <mat-icon (click)="aboutBack()" style="font-size: 30px;color: white;vertical-align: middle;display: table-cell;">
+    keyboard_arrow_left
+  </mat-icon>
+  <p style="color: white;width: 200px;font-size: 16px;padding-left: 28%;vertical-align: middle;display: table-cell">
+    添加模式</p>
+</div>
+<div>
+  <p style="font-weight: bold;margin-left: 15px;margin-top:20px;">基本信息</p>
+</div>
+<mat-card class="mat-elevation-z1"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 145px;">
+  <div style="display: flex;justify-content: space-between;">
+      <p style="margin-top: 15px">场景名称</p>
+    <mat-form-field style="width: 100px;font-size: 10px" appearance="outline">
+      <input matInput placeholder="场景名称">
+    </mat-form-field>
+  </div>
+  <div
+    style="width: 100%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
+  <div style="display: flex;justify-content: space-between">
+    <p style="margin-top: 15px">场景图标</p>
+    <img style="width: 40px;height: 40px" src="assets/icon_out_n.png"/>
+  </div>
+
+</mat-card>
+
+
+<mat-card class="mat-elevation-z1"
+          style="margin-left: 15px;margin-right: 15px;margin-top: 15px;height: 168px">
+  <div style="display: flex;justify-content: space-between">
+    <div style="padding-bottom: 10px;color:black;width: 60px;
+        height: 35px;display: table">
+      <p style="display: table-cell;vertical-align: middle;text-align: left">开启时间</p>
+    </div>
+    <div style="padding-bottom: 10px;color:black;width: 60px;
+        height: 35px;display: table">
+      <p style="display: table-cell;vertical-align: middle;text-align: left">00:00</p>
+    </div>
+    <mat-slide-toggle color="primary" checked></mat-slide-toggle>
+  </div>
+  <div
+    style="width: 100%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
+  <div style="display: flex;justify-content: space-between">
+    <div style="padding-bottom: 10px;color:black;width: 60px;
+        height: 35px;display: table">
+      <p style="display: table-cell;vertical-align: middle;text-align: left">关闭时间</p>
+    </div>
+    <div style="padding-bottom: 10px;color:black;width: 60px;
+        height: 35px;display: table">
+      <p style="display: table-cell;vertical-align: middle;text-align: left">00:00</p>
+    </div>
+    <mat-slide-toggle color="primary" checked></mat-slide-toggle>
+  </div>
+
+  <div
+    style="width: 100%;margin-top: 1%;margin-bottom: 5%; margin-top: 1%;height: 1px; background-color: gray; transform:scaleY(0.5);"></div>
+  <div style="display: flex;justify-content: space-between">
+    <div style="padding-bottom: 10px;color:black;width: 240px;
+        height: 35px;display: table">
+      <p style="display: table-cell;vertical-align: middle;text-align: left">重复</p>
+    </div>
+    <div style="padding-bottom: 10px;color:black;width: 240px;
+        height: 35px;display: table">
+      <p style="display: table-cell;color: #a3a3a3;vertical-align: middle;text-align: right">不重复</p>
+    </div>
+    <mat-icon style="color: gray">keyboard_arrow_right</mat-icon>
+  </div>
+</mat-card>
+<div>
+  <p style="font-weight: bold;margin-left: 15px;margin-top: 20px;">设备设置</p>
+</div>
+<mat-card class="mat-elevation-z1"
+          style="margin-left: 15px;margin-right: 15px;height: 60px">
+  <div style="display: flex;justify-content: space-between">
+    <p style="margin-top: 7px">场景图标</p>
+    <div style="background: #0091ff;width: 30px;height: 30px;border-radius: 50%;padding: 5px">
+    <img style="width: 20px;height: 20px" routerLink="/add-mode"
+         src="assets/mode_add.png"/>
+    </div>
+  </div>
+</mat-card>
+
+<div style="text-align: center;margin-top: 10px;display: flex;justify-content: space-between;margin-left: 30px;margin-right: 30px">
+  <button mat-flat-button
+          style="border-radius:30px;background-color: #eaeaea;color: black;height: 35px;width: 120px;font-weight: bold">取消
+  </button>
+  <button mat-flat-button
+          style="border-radius:30px;background-color: #0091ff;color: white;height: 35px;width: 120px;font-weight: bold">保存
+  </button>
+</div>
+
+
